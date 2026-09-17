@@ -1,0 +1,1863 @@
+[
+  {
+    "id": "acc_01",
+    "customer_text": "I forgot my Spotify password and the reset link is not arriving in my inbox!",
+    "ground_truth_intent": "account_access",
+    "should_escalate": false,
+    "escalation_reason": null,
+    "ideal_key_points": [
+      "check spam folder",
+      "try password reset link again",
+      "DM email"
+    ]
+  },
+  {
+    "id": "acc_02",
+    "customer_text": "Someone from Russia logged into my Spotify account and changed the email! Help me recover it!",
+    "ground_truth_intent": "account_access",
+    "should_escalate": true,
+    "escalation_reason": "Account takeover / unauthorized security breach.",
+    "ideal_key_points": [
+      "escalate to security",
+      "DM account receipts",
+      "lock account"
+    ]
+  },
+  {
+    "id": "acc_03",
+    "customer_text": "Trying to invite my sister to Family Plan but it says not at the same address. We live in the same house!",
+    "ground_truth_intent": "account_access",
+    "should_escalate": false,
+    "escalation_reason": null,
+    "ideal_key_points": [
+      "match address format exactly",
+      "use plan manager address"
+    ]
+  },
+  {
+    "id": "acc_04",
+    "customer_text": "I am not getting the 2FA SMS code to log in on my new phone.",
+    "ground_truth_intent": "account_access",
+    "should_escalate": false,
+    "escalation_reason": null,
+    "ideal_key_points": [
+      "check shortcode block",
+      "use backup email",
+      "DM username"
+    ]
+  },
+  {
+    "id": "acc_05",
+    "customer_text": "My student discount failed verification on SheerID even though my college ID is valid.",
+    "ground_truth_intent": "account_access",
+    "should_escalate": false,
+    "escalation_reason": null,
+    "ideal_key_points": [
+      "submit document under 3 months old",
+      "contact SheerID"
+    ]
+  },
+  {
+    "id": "acc_06",
+    "customer_text": "Can I change my Spotify username? The random number string is ugly.",
+    "ground_truth_intent": "account_access",
+    "should_escalate": false,
+    "escalation_reason": null,
+    "ideal_key_points": [
+      "change display name",
+      "usernames cannot be renamed"
+    ]
+  },
+  {
+    "id": "acc_07",
+    "customer_text": "Locked out of my account after too many failed password attempts. How long is the lock?",
+    "ground_truth_intent": "account_access",
+    "should_escalate": false,
+    "escalation_reason": null,
+    "ideal_key_points": [
+      "wait 30-60 minutes",
+      "use incognito window to reset"
+    ]
+  },
+  {
+    "id": "acc_08",
+    "customer_text": "I made my account with Facebook and now my Facebook is deleted. How do I get in?",
+    "ground_truth_intent": "account_access",
+    "should_escalate": false,
+    "escalation_reason": null,
+    "ideal_key_points": [
+      "use password reset for FB email",
+      "DM email"
+    ]
+  },
+  {
+    "id": "acc_09",
+    "customer_text": "Getting error 'Spotify is only available in your home country for 14 days' when traveling.",
+    "ground_truth_intent": "account_access",
+    "should_escalate": false,
+    "escalation_reason": null,
+    "ideal_key_points": [
+      "upgrade to Premium for travel",
+      "change country in settings with local IP"
+    ]
+  },
+  {
+    "id": "acc_10",
+    "customer_text": "How do I remove a device from my Spotify account remotely?",
+    "ground_truth_intent": "account_access",
+    "should_escalate": false,
+    "escalation_reason": null,
+    "ideal_key_points": [
+      "go to account page",
+      "click Sign Out Everywhere"
+    ]
+  },
+  {
+    "id": "acc_11",
+    "customer_text": "My Duo invite link says expired when my boyfriend clicks it.",
+    "ground_truth_intent": "account_access",
+    "should_escalate": false,
+    "escalation_reason": null,
+    "ideal_key_points": [
+      "re-send invite link from plan dashboard"
+    ]
+  },
+  {
+    "id": "acc_12",
+    "customer_text": "Someone is playing random songs on my Spotify right now, I think someone is in my account!",
+    "ground_truth_intent": "account_access",
+    "should_escalate": true,
+    "escalation_reason": "Active unauthorized session takeover.",
+    "ideal_key_points": [
+      "sign out everywhere",
+      "reset password immediately",
+      "DM email"
+    ]
+  },
+  {
+    "id": "acc_13",
+    "customer_text": "How do I setup Passkey login on iOS for Spotify?",
+    "ground_truth_intent": "account_access",
+    "should_escalate": false,
+    "escalation_reason": null,
+    "ideal_key_points": [
+      "check account security tab",
+      "support varies by region"
+    ]
+  },
+  {
+    "id": "acc_14",
+    "customer_text": "Can I transfer my playlists from my old Spotify account to my new one?",
+    "ground_truth_intent": "account_access",
+    "should_escalate": false,
+    "escalation_reason": null,
+    "ideal_key_points": [
+      "make playlists public",
+      "follow profile",
+      "copy tracks"
+    ]
+  },
+  {
+    "id": "acc_15",
+    "customer_text": "I need to speak to a real person right now my account was compromised!",
+    "ground_truth_intent": "account_access",
+    "should_escalate": true,
+    "escalation_reason": "Customer explicitly requested human agent and reported security compromise.",
+    "ideal_key_points": [
+      "escalate immediately",
+      "direct to secure form"
+    ]
+  },
+  {
+    "id": "acc_16",
+    "customer_text": "My email was entered with a typo when I signed up and now I can't verify it.",
+    "ground_truth_intent": "account_access",
+    "should_escalate": false,
+    "escalation_reason": null,
+    "ideal_key_points": [
+      "DM with receipt/last 4 digits",
+      "update registered email"
+    ]
+  },
+  {
+    "id": "acc_17",
+    "customer_text": "How do I switch the manager role on our family plan without canceling?",
+    "ground_truth_intent": "account_access",
+    "should_escalate": false,
+    "escalation_reason": null,
+    "ideal_key_points": [
+      "plan manager cannot be transferred",
+      "must re-subscribe under new manager"
+    ]
+  },
+  {
+    "id": "acc_18",
+    "customer_text": "Keep getting 'Something went wrong' on the login screen on Android 14.",
+    "ground_truth_intent": "account_access",
+    "should_escalate": false,
+    "escalation_reason": null,
+    "ideal_key_points": [
+      "clear app storage",
+      "check device time/date",
+      "reinstall"
+    ]
+  },
+  {
+    "id": "acc_19",
+    "customer_text": "Can kids have their own login credentials under Spotify Kids app?",
+    "ground_truth_intent": "account_access",
+    "should_escalate": false,
+    "escalation_reason": null,
+    "ideal_key_points": [
+      "Spotify Kids uses parental login",
+      "pin protected"
+    ]
+  },
+  {
+    "id": "acc_20",
+    "customer_text": "Can I log in using Apple ID if I signed up with Google?",
+    "ground_truth_intent": "account_access",
+    "should_escalate": false,
+    "escalation_reason": null,
+    "ideal_key_points": [
+      "must use original signup provider or set password"
+    ]
+  },
+  {
+    "id": "acc_21",
+    "customer_text": "Verification email link says 'invalid token' every time I click it.",
+    "ground_truth_intent": "account_access",
+    "should_escalate": false,
+    "escalation_reason": null,
+    "ideal_key_points": [
+      "request new link",
+      "open in private window"
+    ]
+  },
+  {
+    "id": "acc_22",
+    "customer_text": "My lawyer told me to demand full account data disclosure under GDPR right now.",
+    "ground_truth_intent": "account_access",
+    "should_escalate": true,
+    "escalation_reason": "Customer referenced lawyer and legal regulatory request.",
+    "ideal_key_points": [
+      "escalate to legal/privacy team",
+      "direct to privacy policy"
+    ]
+  },
+  {
+    "id": "acc_23",
+    "customer_text": "How do I link my Discord account to show what I'm listening to on Spotify?",
+    "ground_truth_intent": "account_access",
+    "should_escalate": false,
+    "escalation_reason": null,
+    "ideal_key_points": [
+      "Discord user settings",
+      "connections",
+      "connect Spotify"
+    ]
+  },
+  {
+    "id": "acc_24",
+    "customer_text": "Is there a limit on how many devices can be signed in at once?",
+    "ground_truth_intent": "account_access",
+    "should_escalate": false,
+    "escalation_reason": null,
+    "ideal_key_points": [
+      "offline devices limit 5",
+      "one stream at a time per account"
+    ]
+  },
+  {
+    "id": "acc_25",
+    "customer_text": "Getting error 403 when trying to log into the web player at school.",
+    "ground_truth_intent": "account_access",
+    "should_escalate": false,
+    "escalation_reason": null,
+    "ideal_key_points": [
+      "network firewall/proxy blocking Spotify",
+      "test on personal hotspot"
+    ]
+  },
+  {
+    "id": "bil_01",
+    "customer_text": "I was billed twice on my debit card this month for $10.99. I need a refund for the duplicate charge!",
+    "ground_truth_intent": "billing_subscription",
+    "should_escalate": false,
+    "escalation_reason": null,
+    "ideal_key_points": [
+      "check for secondary account",
+      "DM card last 4 digits and zip"
+    ]
+  },
+  {
+    "id": "bil_02",
+    "customer_text": "I canceled Premium last month and you guys still charged me! Give me my money back or I dispute with my bank.",
+    "ground_truth_intent": "billing_subscription",
+    "should_escalate": true,
+    "escalation_reason": "Threat of bank dispute / chargeback.",
+    "ideal_key_points": [
+      "review cancellation date",
+      "process refund",
+      "DM email"
+    ]
+  },
+  {
+    "id": "bil_03",
+    "customer_text": "How do I cancel my subscription on my iPhone? There's no cancel button in the app.",
+    "ground_truth_intent": "billing_subscription",
+    "should_escalate": false,
+    "escalation_reason": null,
+    "ideal_key_points": [
+      "cancel via web browser at spotify.com/account",
+      "or in Apple Subscriptions"
+    ]
+  },
+  {
+    "id": "bil_04",
+    "customer_text": "Why did my monthly subscription go up from $10.99 to $11.99 without notifying me?",
+    "ground_truth_intent": "billing_subscription",
+    "should_escalate": false,
+    "escalation_reason": null,
+    "ideal_key_points": [
+      "price adjustment notification was emailed",
+      "can downgrade or cancel"
+    ]
+  },
+  {
+    "id": "bil_05",
+    "customer_text": "Can I pay for Spotify Premium using a prepaid Visa gift card?",
+    "ground_truth_intent": "billing_subscription",
+    "should_escalate": false,
+    "escalation_reason": null,
+    "ideal_key_points": [
+      "prepaid cards must be registered with billing address",
+      "or use Spotify gift card"
+    ]
+  },
+  {
+    "id": "bil_06",
+    "customer_text": "I redeemed a 3-month code from Xbox Game Pass and it gave an error saying code expired.",
+    "ground_truth_intent": "billing_subscription",
+    "should_escalate": false,
+    "escalation_reason": null,
+    "ideal_key_points": [
+      "promotions valid only for new Premium accounts",
+      "check promo terms"
+    ]
+  },
+  {
+    "id": "bil_07",
+    "customer_text": "You stole $150 from my bank account across 10 unauthorized transactions! This is fraud!",
+    "ground_truth_intent": "billing_subscription",
+    "should_escalate": true,
+    "escalation_reason": "High financial amount ($150) and allegation of fraud/theft.",
+    "ideal_key_points": [
+      "escalate to billing fraud team immediately",
+      "secure payment details"
+    ]
+  },
+  {
+    "id": "bil_08",
+    "customer_text": "How do I pause my subscription while I go away for summer vacation?",
+    "ground_truth_intent": "billing_subscription",
+    "should_escalate": false,
+    "escalation_reason": null,
+    "ideal_key_points": [
+      "Spotify doesn't support pause",
+      "cancel and resubscribe later, playlists saved"
+    ]
+  },
+  {
+    "id": "bil_09",
+    "customer_text": "My payment method keeps getting declined even though my card has funds.",
+    "ground_truth_intent": "billing_subscription",
+    "should_escalate": false,
+    "escalation_reason": null,
+    "ideal_key_points": [
+      "check international transactions enabled",
+      "contact issuing bank",
+      "try PayPal"
+    ]
+  },
+  {
+    "id": "bil_10",
+    "customer_text": "Can I get an official VAT invoice for my business tax accounting?",
+    "ground_truth_intent": "billing_subscription",
+    "should_escalate": false,
+    "escalation_reason": null,
+    "ideal_key_points": [
+      "download receipt from account page under receipts"
+    ]
+  },
+  {
+    "id": "bil_11",
+    "customer_text": "Does Spotify offer an annual subscription plan at a discount?",
+    "ground_truth_intent": "billing_subscription",
+    "should_escalate": false,
+    "escalation_reason": null,
+    "ideal_key_points": [
+      "annual gift cards available at major retailers",
+      "direct billing is monthly"
+    ]
+  },
+  {
+    "id": "bil_12",
+    "customer_text": "I was charged for a family plan but only have 1 person on it, can I downgrade to individual?",
+    "ground_truth_intent": "billing_subscription",
+    "should_escalate": false,
+    "escalation_reason": null,
+    "ideal_key_points": [
+      "switch plan on account page",
+      "change takes effect at next billing cycle"
+    ]
+  },
+  {
+    "id": "bil_13",
+    "customer_text": "Why does my bill say Billed through Roku when I don't own a Roku device?",
+    "ground_truth_intent": "billing_subscription",
+    "should_escalate": true,
+    "escalation_reason": "Suspicious third-party billing channel mismatch.",
+    "ideal_key_points": [
+      "investigate third party billing",
+      "DM email"
+    ]
+  },
+  {
+    "id": "bil_14",
+    "customer_text": "How do I apply a student discount renewal after my first year ended?",
+    "ground_truth_intent": "billing_subscription",
+    "should_escalate": false,
+    "escalation_reason": null,
+    "ideal_key_points": [
+      "re-verify status at sheerid/spotify",
+      "up to 4 years allowed"
+    ]
+  },
+  {
+    "id": "bil_15",
+    "customer_text": "If I cancel my Premium today do I lose my downloaded music immediately?",
+    "ground_truth_intent": "billing_subscription",
+    "should_escalate": false,
+    "escalation_reason": null,
+    "ideal_key_points": [
+      "keep Premium until end of prepaid period",
+      "downloads become unavailable after"
+    ]
+  },
+  {
+    "id": "bil_16",
+    "customer_text": "I bought a Spotify gift card in Canada, can I redeem it on my US account?",
+    "ground_truth_intent": "billing_subscription",
+    "should_escalate": false,
+    "escalation_reason": null,
+    "ideal_key_points": [
+      "gift cards must match account country currency"
+    ]
+  },
+  {
+    "id": "bil_17",
+    "customer_text": "I demand to speak to a billing supervisor right now about these hidden charges!",
+    "ground_truth_intent": "billing_subscription",
+    "should_escalate": true,
+    "escalation_reason": "Explicit supervisor request and billing dispute.",
+    "ideal_key_points": [
+      "escalate to billing supervisor",
+      "DM account email"
+    ]
+  },
+  {
+    "id": "bil_18",
+    "customer_text": "Why was my free trial canceled early before the 30 days were up?",
+    "ground_truth_intent": "billing_subscription",
+    "should_escalate": false,
+    "escalation_reason": null,
+    "ideal_key_points": [
+      "check if previous trial used on payment method",
+      "DM email to check"
+    ]
+  },
+  {
+    "id": "bil_19",
+    "customer_text": "Can I split the Spotify Duo bill between two separate credit cards?",
+    "ground_truth_intent": "billing_subscription",
+    "should_escalate": false,
+    "escalation_reason": null,
+    "ideal_key_points": [
+      "Duo bill is paid by primary manager only"
+    ]
+  },
+  {
+    "id": "bil_20",
+    "customer_text": "What happens to my playlists if my payment fails and account reverts to free?",
+    "ground_truth_intent": "billing_subscription",
+    "should_escalate": false,
+    "escalation_reason": null,
+    "ideal_key_points": [
+      "playlists and saved library are never deleted"
+    ]
+  },
+  {
+    "id": "bil_21",
+    "customer_text": "Can I pay for Spotify using Google Play balance?",
+    "ground_truth_intent": "billing_subscription",
+    "should_escalate": false,
+    "escalation_reason": null,
+    "ideal_key_points": [
+      "available if subscribed through Google Play in app"
+    ]
+  },
+  {
+    "id": "bil_22",
+    "customer_text": "I signed up for Premium by accident while my toddler was playing with my phone, please refund.",
+    "ground_truth_intent": "billing_subscription",
+    "should_escalate": false,
+    "escalation_reason": null,
+    "ideal_key_points": [
+      "cancel subscription",
+      "DM account details for accidental purchase refund"
+    ]
+  },
+  {
+    "id": "bil_23",
+    "customer_text": "Is there a military or senior citizen discount available for Spotify?",
+    "ground_truth_intent": "billing_subscription",
+    "should_escalate": false,
+    "escalation_reason": null,
+    "ideal_key_points": [
+      "currently only Student discount offered"
+    ]
+  },
+  {
+    "id": "bil_24",
+    "customer_text": "My bank statement has a $1 charge from Spotify that I didn't authorize.",
+    "ground_truth_intent": "billing_subscription",
+    "should_escalate": false,
+    "escalation_reason": null,
+    "ideal_key_points": [
+      "temporary authorization hold to verify card",
+      "drops off in few days"
+    ]
+  },
+  {
+    "id": "bil_25",
+    "customer_text": "You useless idiots charged me again, this is a fucking scam!",
+    "ground_truth_intent": "billing_subscription",
+    "should_escalate": true,
+    "escalation_reason": "Severe profanity and abusive language.",
+    "ideal_key_points": [
+      "escalate to de-escalation team"
+    ]
+  },
+  {
+    "id": "pb_01",
+    "customer_text": "All my downloaded songs stop playing after 10 seconds when I turn on Airplane mode.",
+    "ground_truth_intent": "playback_bug",
+    "should_escalate": false,
+    "escalation_reason": null,
+    "ideal_key_points": [
+      "clean reinstall app",
+      "check offline device limit",
+      "toggle offline mode in app"
+    ]
+  },
+  {
+    "id": "pb_02",
+    "customer_text": "Spotify desktop app crashes on startup on Windows 11 after the latest update.",
+    "ground_truth_intent": "playback_bug",
+    "should_escalate": false,
+    "escalation_reason": null,
+    "ideal_key_points": [
+      "clear cache in %localappdata%/Spotify/Storage",
+      "delete prefs file",
+      "reinstall"
+    ]
+  },
+  {
+    "id": "pb_03",
+    "customer_text": "Bluetooth playback in my car stutters and cuts out every 30 seconds, only with Spotify.",
+    "ground_truth_intent": "playback_bug",
+    "should_escalate": false,
+    "escalation_reason": null,
+    "ideal_key_points": [
+      "disable Hardware Acceleration",
+      "turn off Audio Normalization",
+      "re-pair Bluetooth"
+    ]
+  },
+  {
+    "id": "pb_04",
+    "customer_text": "Spotify Connect doesn't discover my Sonos speakers on the network anymore.",
+    "ground_truth_intent": "playback_bug",
+    "should_escalate": false,
+    "escalation_reason": null,
+    "ideal_key_points": [
+      "ensure same 2.4/5GHz wifi band",
+      "restart router and speakers"
+    ]
+  },
+  {
+    "id": "pb_05",
+    "customer_text": "Local files from my computer won't sync to my iPhone playlist.",
+    "ground_truth_intent": "playback_bug",
+    "should_escalate": false,
+    "escalation_reason": null,
+    "ideal_key_points": [
+      "same wifi network",
+      "allow Spotify in firewall",
+      "toggle local files setting"
+    ]
+  },
+  {
+    "id": "pb_06",
+    "customer_text": "Songs play with no sound even though volume is turned all the way up.",
+    "ground_truth_intent": "playback_bug",
+    "should_escalate": false,
+    "escalation_reason": null,
+    "ideal_key_points": [
+      "check audio output device in settings",
+      "restart app"
+    ]
+  },
+  {
+    "id": "pb_07",
+    "customer_text": "The Spotify app is consuming 40% battery in the background on my Galaxy S23.",
+    "ground_truth_intent": "playback_bug",
+    "should_escalate": false,
+    "escalation_reason": null,
+    "ideal_key_points": [
+      "clear app cache",
+      "set battery to optimized in Android settings"
+    ]
+  },
+  {
+    "id": "pb_08",
+    "customer_text": "Crossfade is turned on to 5 seconds but songs just cut abruptly between tracks.",
+    "ground_truth_intent": "playback_bug",
+    "should_escalate": false,
+    "escalation_reason": null,
+    "ideal_key_points": [
+      "disable Automix",
+      "re-adjust crossfade slider"
+    ]
+  },
+  {
+    "id": "pb_09",
+    "customer_text": "Web player says 'Protected content playback not enabled' in Chrome browser.",
+    "ground_truth_intent": "playback_bug",
+    "should_escalate": false,
+    "escalation_reason": null,
+    "ideal_key_points": [
+      "enable Protected Content in Chrome site settings",
+      "enable Widevine"
+    ]
+  },
+  {
+    "id": "pb_10",
+    "customer_text": "Music pauses every time I lock my phone screen on iOS 17.",
+    "ground_truth_intent": "playback_bug",
+    "should_escalate": false,
+    "escalation_reason": null,
+    "ideal_key_points": [
+      "turn on Background App Refresh for Spotify in iOS settings"
+    ]
+  },
+  {
+    "id": "pb_11",
+    "customer_text": "Equalizer settings reset to flat every time I restart the app.",
+    "ground_truth_intent": "playback_bug",
+    "should_escalate": false,
+    "escalation_reason": null,
+    "ideal_key_points": [
+      "reinstall app",
+      "check storage permissions"
+    ]
+  },
+  {
+    "id": "pb_12",
+    "customer_text": "Spotify keeps skipping through songs rapidly without playing anything.",
+    "ground_truth_intent": "playback_bug",
+    "should_escalate": false,
+    "escalation_reason": null,
+    "ideal_key_points": [
+      "sign out and back in",
+      "check internet connection / VPN"
+    ]
+  },
+  {
+    "id": "pb_13",
+    "customer_text": "Audio quality sounds muffled on Very High quality setting.",
+    "ground_truth_intent": "playback_bug",
+    "should_escalate": false,
+    "escalation_reason": null,
+    "ideal_key_points": [
+      "check equalizer preset",
+      "turn off audio normalization"
+    ]
+  },
+  {
+    "id": "pb_14",
+    "customer_text": "Podcasts freeze at 15 minutes and buffer forever.",
+    "ground_truth_intent": "playback_bug",
+    "should_escalate": false,
+    "escalation_reason": null,
+    "ideal_key_points": [
+      "clear download and re-download",
+      "clear cache"
+    ]
+  },
+  {
+    "id": "pb_15",
+    "customer_text": "Smart shuffle won't turn off no matter how many times I tap the shuffle button.",
+    "ground_truth_intent": "playback_bug",
+    "should_escalate": false,
+    "escalation_reason": null,
+    "ideal_key_points": [
+      "tap shuffle button twice to cycle standard shuffle and off"
+    ]
+  },
+  {
+    "id": "pb_16",
+    "customer_text": "The playback bar progress slider jumps back to the beginning of the song.",
+    "ground_truth_intent": "playback_bug",
+    "should_escalate": false,
+    "escalation_reason": null,
+    "ideal_key_points": [
+      "network latency issue",
+      "clear cache"
+    ]
+  },
+  {
+    "id": "pb_17",
+    "customer_text": "Apple Watch app says 'Connecting...' forever and won't play downloads.",
+    "ground_truth_intent": "playback_bug",
+    "should_escalate": false,
+    "escalation_reason": null,
+    "ideal_key_points": [
+      "restart Apple Watch and iPhone",
+      "re-pair watch"
+    ]
+  },
+  {
+    "id": "pb_18",
+    "customer_text": "Spotify crashes whenever I plug in wired 3.5mm headphones.",
+    "ground_truth_intent": "playback_bug",
+    "should_escalate": false,
+    "escalation_reason": null,
+    "ideal_key_points": [
+      "audio driver issue",
+      "reinstall app"
+    ]
+  },
+  {
+    "id": "pb_19",
+    "customer_text": "Songs on my SD card disappeared after phone reboot.",
+    "ground_truth_intent": "playback_bug",
+    "should_escalate": false,
+    "escalation_reason": null,
+    "ideal_key_points": [
+      "check SD card mount status",
+      "re-select storage location in settings"
+    ]
+  },
+  {
+    "id": "pb_20",
+    "customer_text": "Lyrics are out of sync by about 5 seconds behind the vocals.",
+    "ground_truth_intent": "playback_bug",
+    "should_escalate": false,
+    "escalation_reason": null,
+    "ideal_key_points": [
+      "lyrics provided by Musixmatch",
+      "report via flag icon in lyrics view"
+    ]
+  },
+  {
+    "id": "pb_21",
+    "customer_text": "High battery drain and phone gets burning hot while streaming.",
+    "ground_truth_intent": "playback_bug",
+    "should_escalate": false,
+    "escalation_reason": null,
+    "ideal_key_points": [
+      "lower streaming quality",
+      "disable canvas visuals"
+    ]
+  },
+  {
+    "id": "pb_22",
+    "customer_text": "Can't control volume using phone physical buttons while using Spotify Connect.",
+    "ground_truth_intent": "playback_bug",
+    "should_escalate": false,
+    "escalation_reason": null,
+    "ideal_key_points": [
+      "use in-app volume slider due to iOS Connect limitations"
+    ]
+  },
+  {
+    "id": "pb_23",
+    "customer_text": "Offline downloads showing 'waiting to download' spinning wheel for 3 days.",
+    "ground_truth_intent": "playback_bug",
+    "should_escalate": false,
+    "escalation_reason": null,
+    "ideal_key_points": [
+      "turn off 'Download using cellular' or connect to stable wifi"
+    ]
+  },
+  {
+    "id": "pb_24",
+    "customer_text": "App constantly reloads and says 'No internet connection' even with full 5G.",
+    "ground_truth_intent": "playback_bug",
+    "should_escalate": false,
+    "escalation_reason": null,
+    "ideal_key_points": [
+      "toggle offline mode toggle off in playback settings",
+      "disable VPN"
+    ]
+  },
+  {
+    "id": "pb_25",
+    "customer_text": "Playback stutters severely on Mac M2 with external DAC.",
+    "ground_truth_intent": "playback_bug",
+    "should_escalate": false,
+    "escalation_reason": null,
+    "ideal_key_points": [
+      "check audio MIDI setup sample rate",
+      "toggle hardware acceleration"
+    ]
+  },
+  {
+    "id": "ca_01",
+    "customer_text": "Why are several tracks on the new album completely greyed out and unplayable in Canada?",
+    "ground_truth_intent": "content_availability",
+    "should_escalate": false,
+    "escalation_reason": null,
+    "ideal_key_points": [
+      "licensing varies by territory",
+      "agreements determined by rights holder"
+    ]
+  },
+  {
+    "id": "ca_02",
+    "customer_text": "My playlist with 400 favorite songs was accidentally deleted! How can I restore it?",
+    "ground_truth_intent": "content_availability",
+    "should_escalate": false,
+    "escalation_reason": null,
+    "ideal_key_points": [
+      "restore playlists at spotify.com/account/recover-playlists"
+    ]
+  },
+  {
+    "id": "ca_03",
+    "customer_text": "The explicit version of songs is playing the clean radio edit even with explicit content enabled.",
+    "ground_truth_intent": "content_availability",
+    "should_escalate": false,
+    "escalation_reason": null,
+    "ideal_key_points": [
+      "search album directly",
+      "look for explicit badge/1 more release"
+    ]
+  },
+  {
+    "id": "ca_04",
+    "customer_text": "Where did the Joe Rogan podcast episode 2100 go? It's not showing in the catalog.",
+    "ground_truth_intent": "content_availability",
+    "should_escalate": false,
+    "escalation_reason": null,
+    "ideal_key_points": [
+      "check episode availability",
+      "CDN propagation delays"
+    ]
+  },
+  {
+    "id": "ca_05",
+    "customer_text": "The song title and metadata is completely wrong on this classical music album.",
+    "ground_truth_intent": "content_availability",
+    "should_escalate": false,
+    "escalation_reason": null,
+    "ideal_key_points": [
+      "metadata supplied by record label/distributor",
+      "report error"
+    ]
+  },
+  {
+    "id": "ca_06",
+    "customer_text": "Why was Neil Young's discography removed from Spotify?",
+    "ground_truth_intent": "content_availability",
+    "should_escalate": false,
+    "escalation_reason": null,
+    "ideal_key_points": [
+      "artist catalog removals managed by artist/label"
+    ]
+  },
+  {
+    "id": "ca_07",
+    "customer_text": "My Release Radar playlist didn't update this Friday morning like it usually does.",
+    "ground_truth_intent": "content_availability",
+    "should_escalate": false,
+    "escalation_reason": null,
+    "ideal_key_points": [
+      "Release Radar updates throughout Friday morning",
+      "check later in day"
+    ]
+  },
+  {
+    "id": "ca_08",
+    "customer_text": "Can I hide or block specific artists from appearing in my Discover Weekly?",
+    "ground_truth_intent": "content_availability",
+    "should_escalate": false,
+    "escalation_reason": null,
+    "ideal_key_points": [
+      "go to artist profile",
+      "tap 3 dots",
+      "Don't play this artist"
+    ]
+  },
+  {
+    "id": "ca_09",
+    "customer_text": "Why do some songs have animated Canvas videos and others don't?",
+    "ground_truth_intent": "content_availability",
+    "should_escalate": false,
+    "escalation_reason": null,
+    "ideal_key_points": [
+      "Canvas is uploaded at artist/label discretion"
+    ]
+  },
+  {
+    "id": "ca_10",
+    "customer_text": "Audiobooks aren't showing the 15 hours included in my Premium subscription.",
+    "ground_truth_intent": "content_availability",
+    "should_escalate": false,
+    "escalation_reason": null,
+    "ideal_key_points": [
+      "included in primary account in select countries (US/UK/AU)"
+    ]
+  },
+  {
+    "id": "ca_11",
+    "customer_text": "A song that was on my playlist yesterday is now completely missing with no trace.",
+    "ground_truth_intent": "content_availability",
+    "should_escalate": false,
+    "escalation_reason": null,
+    "ideal_key_points": [
+      "track licensing may have lapsed",
+      "turn on 'Show unplayable songs' in settings"
+    ]
+  },
+  {
+    "id": "ca_12",
+    "customer_text": "Why is the Japanese soundtrack album blocked from playing in North America?",
+    "ground_truth_intent": "content_availability",
+    "should_escalate": false,
+    "escalation_reason": null,
+    "ideal_key_points": [
+      "territorial rights restrictions set by publisher"
+    ]
+  },
+  {
+    "id": "ca_13",
+    "customer_text": "Can I recover a playlist that someone else deleted from our collaborative playlist?",
+    "ground_truth_intent": "content_availability",
+    "should_escalate": false,
+    "escalation_reason": null,
+    "ideal_key_points": [
+      "only playlist owner can restore deleted songs",
+      "check owner account"
+    ]
+  },
+  {
+    "id": "ca_14",
+    "customer_text": "The album art for Taylor Swift's 1989 is displaying the wrong image.",
+    "ground_truth_intent": "content_availability",
+    "should_escalate": false,
+    "escalation_reason": null,
+    "ideal_key_points": [
+      "clear app image cache"
+    ]
+  },
+  {
+    "id": "ca_15",
+    "customer_text": "Why can't I search for community-made playlists anymore?",
+    "ground_truth_intent": "content_availability",
+    "should_escalate": false,
+    "escalation_reason": null,
+    "ideal_key_points": [
+      "search filters by playlists",
+      "check safe search filter"
+    ]
+  },
+  {
+    "id": "ca_16",
+    "customer_text": "A podcast creator uploaded a video podcast but I only get audio.",
+    "ground_truth_intent": "content_availability",
+    "should_escalate": false,
+    "escalation_reason": null,
+    "ideal_key_points": [
+      "ensure Video Playback is enabled in app data saver settings"
+    ]
+  },
+  {
+    "id": "ca_17",
+    "customer_text": "Live radio stations from BBC are no longer streaming on Spotify.",
+    "ground_truth_intent": "content_availability",
+    "should_escalate": false,
+    "escalation_reason": null,
+    "ideal_key_points": [
+      "broadcaster agreements subject to change"
+    ]
+  },
+  {
+    "id": "ca_18",
+    "customer_text": "Where is the Daily Drive playlist? Did you get rid of it?",
+    "ground_truth_intent": "content_availability",
+    "should_escalate": false,
+    "escalation_reason": null,
+    "ideal_key_points": [
+      "search Daily Drive",
+      "check Made For You hub"
+    ]
+  },
+  {
+    "id": "ca_19",
+    "customer_text": "Why is this podcast feed 5 episodes behind Apple Podcasts?",
+    "ground_truth_intent": "content_availability",
+    "should_escalate": false,
+    "escalation_reason": null,
+    "ideal_key_points": [
+      "RSS feed syncing delay",
+      "DM podcast link to refresh feed"
+    ]
+  },
+  {
+    "id": "ca_20",
+    "customer_text": "I can't find the instrumental version of this movie score on Spotify.",
+    "ground_truth_intent": "content_availability",
+    "should_escalate": false,
+    "escalation_reason": null,
+    "ideal_key_points": [
+      "availability subject to studio release agreements"
+    ]
+  },
+  {
+    "id": "ca_21",
+    "customer_text": "Why are karaoke vocal reduction tracks removed from my country?",
+    "ground_truth_intent": "content_availability",
+    "should_escalate": false,
+    "escalation_reason": null,
+    "ideal_key_points": [
+      "regional licensing rights"
+    ]
+  },
+  {
+    "id": "ca_22",
+    "customer_text": "Can I report copyright infringement on a user upload via Twitter?",
+    "ground_truth_intent": "content_availability",
+    "should_escalate": true,
+    "escalation_reason": "DMCA / Copyright infringement notice.",
+    "ideal_key_points": [
+      "submit via official DMCA form at spotify.com/legal/copyright"
+    ]
+  },
+  {
+    "id": "ca_23",
+    "customer_text": "Why did my Wrapped 2023 stories disappear from my library?",
+    "ground_truth_intent": "content_availability",
+    "should_escalate": false,
+    "escalation_reason": null,
+    "ideal_key_points": [
+      "Wrapped stories are seasonal",
+      "Wrapped playlist remains available"
+    ]
+  },
+  {
+    "id": "ca_24",
+    "customer_text": "Song plays for 30 seconds preview only even though I am logged in.",
+    "ground_truth_intent": "content_availability",
+    "should_escalate": false,
+    "escalation_reason": null,
+    "ideal_key_points": [
+      "check account status is active Premium",
+      "sign out and sign in"
+    ]
+  },
+  {
+    "id": "ca_25",
+    "customer_text": "Can we share Spotify Blend playlists with more than 10 people?",
+    "ground_truth_intent": "content_availability",
+    "should_escalate": false,
+    "escalation_reason": null,
+    "ideal_key_points": [
+      "Blend supports up to 10 friends"
+    ]
+  },
+  {
+    "id": "fh_01",
+    "customer_text": "Is Spotify Car Thing discontinued permanently? Mine won't turn on.",
+    "ground_truth_intent": "feature_hardware",
+    "should_escalate": false,
+    "escalation_reason": null,
+    "ideal_key_points": [
+      "Car Thing discontinued",
+      "see support link for device options"
+    ]
+  },
+  {
+    "id": "fh_02",
+    "customer_text": "When is Spotify HiFi lossless streaming coming out? People have been waiting for years!",
+    "ground_truth_intent": "feature_hardware",
+    "should_escalate": false,
+    "escalation_reason": null,
+    "ideal_key_points": [
+      "no official release date",
+      "watch official newsroom announcements"
+    ]
+  },
+  {
+    "id": "fh_03",
+    "customer_text": "How do I set Spotify as the default music player on Amazon Echo Dot?",
+    "ground_truth_intent": "feature_hardware",
+    "should_escalate": false,
+    "escalation_reason": null,
+    "ideal_key_points": [
+      "open Alexa app > settings > music & podcasts > default services"
+    ]
+  },
+  {
+    "id": "fh_04",
+    "customer_text": "Why did you take away the in-app lyrics feature for free accounts?",
+    "ground_truth_intent": "feature_hardware",
+    "should_escalate": false,
+    "escalation_reason": null,
+    "ideal_key_points": [
+      "lyrics features vary by tier and testing",
+      "log feedback for product"
+    ]
+  },
+  {
+    "id": "fh_05",
+    "customer_text": "Does Spotify have a Siri shortcut to play my liked songs when driving?",
+    "ground_truth_intent": "feature_hardware",
+    "should_escalate": false,
+    "escalation_reason": null,
+    "ideal_key_points": [
+      "use Apple Shortcuts app or say 'Hey Siri play my liked songs on Spotify'"
+    ]
+  },
+  {
+    "id": "fh_06",
+    "customer_text": "How do I connect Spotify to my PlayStation 5 for background gaming audio?",
+    "ground_truth_intent": "feature_hardware",
+    "should_escalate": false,
+    "escalation_reason": null,
+    "ideal_key_points": [
+      "download Spotify from PS5 Media tab",
+      "link account"
+    ]
+  },
+  {
+    "id": "fh_07",
+    "customer_text": "Can I control playback from my Garmin smartwatch during runs without my phone?",
+    "ground_truth_intent": "feature_hardware",
+    "should_escalate": false,
+    "escalation_reason": null,
+    "ideal_key_points": [
+      "Garmin Spotify app supports offline syncing for Premium users"
+    ]
+  },
+  {
+    "id": "fh_08",
+    "customer_text": "Is there a sleep timer feature in the mobile app so music stops automatically?",
+    "ground_truth_intent": "feature_hardware",
+    "should_escalate": false,
+    "escalation_reason": null,
+    "ideal_key_points": [
+      "tap Now Playing > 3 dots > Sleep Timer"
+    ]
+  },
+  {
+    "id": "fh_09",
+    "customer_text": "How do I turn on DJ X mode? I don't see the AI DJ button in my app.",
+    "ground_truth_intent": "feature_hardware",
+    "should_escalate": false,
+    "escalation_reason": null,
+    "ideal_key_points": [
+      "AI DJ available in select English-language markets for Premium",
+      "check Music tab"
+    ]
+  },
+  {
+    "id": "fh_10",
+    "customer_text": "Does Spotify support spatial audio or Dolby Atmos like Apple Music?",
+    "ground_truth_intent": "feature_hardware",
+    "should_escalate": false,
+    "escalation_reason": null,
+    "ideal_key_points": [
+      "spatial audio/Atmos currently not supported on Spotify"
+    ]
+  },
+  {
+    "id": "fh_11",
+    "customer_text": "How do I link Spotify to my Waze navigation app?",
+    "ground_truth_intent": "feature_hardware",
+    "should_escalate": false,
+    "escalation_reason": null,
+    "ideal_key_points": [
+      "Waze settings > Audio Player > enable Spotify"
+    ]
+  },
+  {
+    "id": "fh_12",
+    "customer_text": "Can I use Spotify on two Apple TVs in different rooms simultaneously?",
+    "ground_truth_intent": "feature_hardware",
+    "should_escalate": false,
+    "escalation_reason": null,
+    "ideal_key_points": [
+      "requires multiple accounts or Family Plan for concurrent streams"
+    ]
+  },
+  {
+    "id": "fh_13",
+    "customer_text": "Where is the Friend Activity sidebar on the Spotify desktop app? It vanished.",
+    "ground_truth_intent": "feature_hardware",
+    "should_escalate": false,
+    "escalation_reason": null,
+    "ideal_key_points": [
+      "click profile icon > settings > display > enable 'See what your friends are playing'"
+    ]
+  },
+  {
+    "id": "fh_14",
+    "customer_text": "How do I make Spotify start automatically when I connect to my car Bluetooth?",
+    "ground_truth_intent": "feature_hardware",
+    "should_escalate": false,
+    "escalation_reason": null,
+    "ideal_key_points": [
+      "use iOS Automations or Android Auto auto-play settings"
+    ]
+  },
+  {
+    "id": "fh_15",
+    "customer_text": "Does Spotify offer a native app for Linux Ubuntu?",
+    "ground_truth_intent": "feature_hardware",
+    "should_escalate": false,
+    "escalation_reason": null,
+    "ideal_key_points": [
+      "available via Snap package or Debian repository at spotify.com/download"
+    ]
+  },
+  {
+    "id": "fh_16",
+    "customer_text": "How do I adjust audio normalization loudness between songs?",
+    "ground_truth_intent": "feature_hardware",
+    "should_escalate": false,
+    "escalation_reason": null,
+    "ideal_key_points": [
+      "settings > playback > Volume level (Quiet, Normal, Loud)"
+    ]
+  },
+  {
+    "id": "fh_17",
+    "customer_text": "Can I exclude my sleep sounds playlist from influencing my taste profile?",
+    "ground_truth_intent": "feature_hardware",
+    "should_escalate": false,
+    "escalation_reason": null,
+    "ideal_key_points": [
+      "open playlist > tap 3 dots > Exclude from your taste profile"
+    ]
+  },
+  {
+    "id": "fh_18",
+    "customer_text": "How do I integrate Spotify with my Samsung Galaxy Watch 6?",
+    "ground_truth_intent": "feature_hardware",
+    "should_escalate": false,
+    "escalation_reason": null,
+    "ideal_key_points": [
+      "install Spotify from Google Play Store on WearOS"
+    ]
+  },
+  {
+    "id": "fh_19",
+    "customer_text": "Is there an equalizer in the Spotify app on iPadOS?",
+    "ground_truth_intent": "feature_hardware",
+    "should_escalate": false,
+    "escalation_reason": null,
+    "ideal_key_points": [
+      "settings > playback > equalizer"
+    ]
+  },
+  {
+    "id": "fh_20",
+    "customer_text": "Can I use voice commands inside the Spotify app directly?",
+    "ground_truth_intent": "feature_hardware",
+    "should_escalate": false,
+    "escalation_reason": null,
+    "ideal_key_points": [
+      "tap Search > microphone icon for Spotify Voice in supported regions"
+    ]
+  },
+  {
+    "id": "fh_21",
+    "customer_text": "Does Spotify support scrobbling directly to Last.fm?",
+    "ground_truth_intent": "feature_hardware",
+    "should_escalate": false,
+    "escalation_reason": null,
+    "ideal_key_points": [
+      "connect Last.fm in settings > social"
+    ]
+  },
+  {
+    "id": "fh_22",
+    "customer_text": "How do I use Spotify Group Session to listen together with friends remotely?",
+    "ground_truth_intent": "feature_hardware",
+    "should_escalate": false,
+    "escalation_reason": null,
+    "ideal_key_points": [
+      "tap Connect icon > Start a remote group session > share link"
+    ]
+  },
+  {
+    "id": "fh_23",
+    "customer_text": "Is there a mini player widget available on macOS Sonoma for Spotify?",
+    "ground_truth_intent": "feature_hardware",
+    "should_escalate": false,
+    "escalation_reason": null,
+    "ideal_key_points": [
+      "click mini player icon in bottom right of desktop app"
+    ]
+  },
+  {
+    "id": "fh_24",
+    "customer_text": "How do I connect my Philips Hue lights to sync with Spotify music?",
+    "ground_truth_intent": "feature_hardware",
+    "should_escalate": false,
+    "escalation_reason": null,
+    "ideal_key_points": [
+      "Philips Hue app > Sync tab > link Spotify account"
+    ]
+  },
+  {
+    "id": "fh_25",
+    "customer_text": "Can we get folder support for playlists on mobile app like on desktop?",
+    "ground_truth_intent": "feature_hardware",
+    "should_escalate": false,
+    "escalation_reason": null,
+    "ideal_key_points": [
+      "creating folders currently desktop only, viewable on mobile"
+    ]
+  },
+  {
+    "id": "gc_01",
+    "customer_text": "The new mobile interface update is awful. Everything is cluttered and hard to find. Revert it back!",
+    "ground_truth_intent": "general_complaint",
+    "should_escalate": false,
+    "escalation_reason": null,
+    "ideal_key_points": [
+      "thank for feedback",
+      "pass to product design team"
+    ]
+  },
+  {
+    "id": "gc_02",
+    "customer_text": "You guys keep hiking the subscription prices while removing features. Greedy corporation.",
+    "ground_truth_intent": "general_complaint",
+    "should_escalate": false,
+    "escalation_reason": null,
+    "ideal_key_points": [
+      "explain pricing investment in catalog and features",
+      "empathetic tone"
+    ]
+  },
+  {
+    "id": "gc_03",
+    "customer_text": "Why does Twitter support take 12 hours to reply to a basic question? Terrible service.",
+    "ground_truth_intent": "general_complaint",
+    "should_escalate": false,
+    "escalation_reason": null,
+    "ideal_key_points": [
+      "apologize for delay",
+      "offer immediate assistance"
+    ]
+  },
+  {
+    "id": "gc_04",
+    "customer_text": "Your shuffle algorithm is absolute trash. It only plays the same 15 artists out of 1000 songs!",
+    "ground_truth_intent": "general_complaint",
+    "should_escalate": false,
+    "escalation_reason": null,
+    "ideal_key_points": [
+      "suggest turning off Automix",
+      "clear cache to reset seed"
+    ]
+  },
+  {
+    "id": "gc_05",
+    "customer_text": "I hate how many podcast and audiobook recommendations are shoved in my music home feed.",
+    "ground_truth_intent": "general_complaint",
+    "should_escalate": false,
+    "escalation_reason": null,
+    "ideal_key_points": [
+      "use Music tab filter at top of home screen"
+    ]
+  },
+  {
+    "id": "gc_06",
+    "customer_text": "Spotify desktop app gets heavier and laggier with every update. Fix your performance!",
+    "ground_truth_intent": "general_complaint",
+    "should_escalate": false,
+    "escalation_reason": null,
+    "ideal_key_points": [
+      "clear cache",
+      "toggle hardware acceleration"
+    ]
+  },
+  {
+    "id": "gc_07",
+    "customer_text": "Why do I see sponsored banner ads when I am literally paying for a Premium account?!",
+    "ground_truth_intent": "general_complaint",
+    "should_escalate": false,
+    "escalation_reason": null,
+    "ideal_key_points": [
+      "Premium provides ad-free music",
+      "podcast creators may insert own sponsorships"
+    ]
+  },
+  {
+    "id": "gc_08",
+    "customer_text": "Customer service bot gave me completely unhelpful canned answers 3 times. Worst experience.",
+    "ground_truth_intent": "general_complaint",
+    "should_escalate": true,
+    "escalation_reason": "Repeated automated failure and customer frustration.",
+    "ideal_key_points": [
+      "escalate to human team",
+      "apologize for bot loops"
+    ]
+  },
+  {
+    "id": "gc_09",
+    "customer_text": "The new desktop font looks cheap and illegible on high resolution monitors.",
+    "ground_truth_intent": "general_complaint",
+    "should_escalate": false,
+    "escalation_reason": null,
+    "ideal_key_points": [
+      "log UI typography feedback"
+    ]
+  },
+  {
+    "id": "gc_10",
+    "customer_text": "Smart shuffle is an annoying feature that nobody asked for. Stop turning it on by default.",
+    "ground_truth_intent": "general_complaint",
+    "should_escalate": false,
+    "escalation_reason": null,
+    "ideal_key_points": [
+      "explain how to cycle back to standard shuffle"
+    ]
+  },
+  {
+    "id": "gc_11",
+    "customer_text": "Tired of Spotify pushing mainstream pop music on me when I only listen to metal and jazz.",
+    "ground_truth_intent": "general_complaint",
+    "should_escalate": false,
+    "escalation_reason": null,
+    "ideal_key_points": [
+      "use 'Don't play this' option",
+      "teach algorithm via like/hide buttons"
+    ]
+  },
+  {
+    "id": "gc_12",
+    "customer_text": "Why does the mobile app take 5 seconds to load up on a brand new iPhone 15 Pro?!",
+    "ground_truth_intent": "general_complaint",
+    "should_escalate": false,
+    "escalation_reason": null,
+    "ideal_key_points": [
+      "clean reinstall",
+      "clear cache storage"
+    ]
+  },
+  {
+    "id": "gc_13",
+    "customer_text": "Spotify Wrapped was so boring this year compared to last year. Major downgrade.",
+    "ground_truth_intent": "general_complaint",
+    "should_escalate": false,
+    "escalation_reason": null,
+    "ideal_key_points": [
+      "pass feedback to Wrapped team"
+    ]
+  },
+  {
+    "id": "gc_14",
+    "customer_text": "Why are artist royalties so low while executive salaries keep growing? Disgusting.",
+    "ground_truth_intent": "general_complaint",
+    "should_escalate": false,
+    "escalation_reason": null,
+    "ideal_key_points": [
+      "direct to Loud & Clear transparency site"
+    ]
+  },
+  {
+    "id": "gc_15",
+    "customer_text": "The lyrics feature being paywalled is ridiculous when Musixmatch has them for free.",
+    "ground_truth_intent": "general_complaint",
+    "should_escalate": false,
+    "escalation_reason": null,
+    "ideal_key_points": [
+      "log tier feedback"
+    ]
+  },
+  {
+    "id": "gc_16",
+    "customer_text": "The heart button was so much better than the plus button. Who approved this change?",
+    "ground_truth_intent": "general_complaint",
+    "should_escalate": false,
+    "escalation_reason": null,
+    "ideal_key_points": [
+      "plus button combines save and playlist add",
+      "log feedback"
+    ]
+  },
+  {
+    "id": "gc_17",
+    "customer_text": "Why do offline songs expire after 30 days if I don't go online? I'm on a submarine deployment!",
+    "ground_truth_intent": "general_complaint",
+    "should_escalate": false,
+    "escalation_reason": null,
+    "ideal_key_points": [
+      "30-day check required by music license holders to verify subscription"
+    ]
+  },
+  {
+    "id": "gc_18",
+    "customer_text": "This whole app is full of bugs and glitches lately. You need better QA engineers.",
+    "ground_truth_intent": "general_complaint",
+    "should_escalate": false,
+    "escalation_reason": null,
+    "ideal_key_points": [
+      "offer to troubleshoot specific glitch"
+    ]
+  },
+  {
+    "id": "gc_19",
+    "customer_text": "I've been a loyal customer for 10 years and there is zero reward or recognition for loyalty.",
+    "ground_truth_intent": "general_complaint",
+    "should_escalate": false,
+    "escalation_reason": null,
+    "ideal_key_points": [
+      "thank for 10 years of loyalty",
+      "pass feedback"
+    ]
+  },
+  {
+    "id": "gc_20",
+    "customer_text": "The search bar auto-correct is terrible, it keeps guessing the wrong artist names.",
+    "ground_truth_intent": "general_complaint",
+    "should_escalate": false,
+    "escalation_reason": null,
+    "ideal_key_points": [
+      "log search feedback"
+    ]
+  },
+  {
+    "id": "gc_21",
+    "customer_text": "Your support representatives never actually read what we type and send canned copy-paste!",
+    "ground_truth_intent": "general_complaint",
+    "should_escalate": true,
+    "escalation_reason": "Frustration with automated/canned replies.",
+    "ideal_key_points": [
+      "apologize sincerely",
+      "review issue specifically"
+    ]
+  },
+  {
+    "id": "gc_22",
+    "customer_text": "Why is the volume on Spotify so much lower than YouTube and Soundcloud?",
+    "ground_truth_intent": "general_complaint",
+    "should_escalate": false,
+    "escalation_reason": null,
+    "ideal_key_points": [
+      "adjust Audio Normalization volume to Loud in settings"
+    ]
+  },
+  {
+    "id": "gc_23",
+    "customer_text": "Canceling my subscription and switching to Tidal today. Bye Spotify.",
+    "ground_truth_intent": "general_complaint",
+    "should_escalate": false,
+    "escalation_reason": null,
+    "ideal_key_points": [
+      "express sadness to see them go",
+      "offer help if there was a solvable issue"
+    ]
+  },
+  {
+    "id": "gc_24",
+    "customer_text": "The social features on this app have gotten worse every year since 2018.",
+    "ground_truth_intent": "general_complaint",
+    "should_escalate": false,
+    "escalation_reason": null,
+    "ideal_key_points": [
+      "log social features feedback"
+    ]
+  },
+  {
+    "id": "gc_25",
+    "customer_text": "Every time there's a viral album release your servers crash. Get more servers!",
+    "ground_truth_intent": "general_complaint",
+    "should_escalate": false,
+    "escalation_reason": null,
+    "ideal_key_points": [
+      "acknowledge traffic spikes",
+      "confirm system status"
+    ]
+  },
+  {
+    "id": "oth_01",
+    "customer_text": "hey",
+    "ground_truth_intent": "other_unclear",
+    "should_escalate": false,
+    "escalation_reason": null,
+    "ideal_key_points": [
+      "ask how we can assist with Spotify"
+    ]
+  },
+  {
+    "id": "oth_02",
+    "customer_text": "Can you tell Sabrina Carpenter that her new single is on repeat all day?",
+    "ground_truth_intent": "other_unclear",
+    "should_escalate": false,
+    "escalation_reason": null,
+    "ideal_key_points": [
+      "friendly response",
+      "cannot forward personal messages to artists"
+    ]
+  },
+  {
+    "id": "oth_03",
+    "customer_text": "???",
+    "ground_truth_intent": "other_unclear",
+    "should_escalate": false,
+    "escalation_reason": null,
+    "ideal_key_points": [
+      "ask if they need assistance"
+    ]
+  },
+  {
+    "id": "oth_04",
+    "customer_text": "Good morning @SpotifyCares hope you have a great day!",
+    "ground_truth_intent": "other_unclear",
+    "should_escalate": false,
+    "escalation_reason": null,
+    "ideal_key_points": [
+      "friendly morning greeting"
+    ]
+  },
+  {
+    "id": "oth_05",
+    "customer_text": "Is this the official Spotify account or a fan account?",
+    "ground_truth_intent": "other_unclear",
+    "should_escalate": false,
+    "escalation_reason": null,
+    "ideal_key_points": [
+      "confirm official Spotify support account"
+    ]
+  },
+  {
+    "id": "oth_06",
+    "customer_text": "What is the capital city of France?",
+    "ground_truth_intent": "other_unclear",
+    "should_escalate": false,
+    "escalation_reason": null,
+    "ideal_key_points": [
+      "Paris",
+      "ask if they have a music question"
+    ]
+  },
+  {
+    "id": "oth_07",
+    "customer_text": "Check out my new SoundCloud mixtape link here [LINK]!",
+    "ground_truth_intent": "other_unclear",
+    "should_escalate": false,
+    "escalation_reason": null,
+    "ideal_key_points": [
+      "remind support channel is for Spotify assistance"
+    ]
+  },
+  {
+    "id": "oth_08",
+    "customer_text": "Testing 1 2 3",
+    "ground_truth_intent": "other_unclear",
+    "should_escalate": false,
+    "escalation_reason": null,
+    "ideal_key_points": [
+      "confirm loud and clear",
+      "how can we help"
+    ]
+  },
+  {
+    "id": "oth_09",
+    "customer_text": "Lol that tweet was so funny",
+    "ground_truth_intent": "other_unclear",
+    "should_escalate": false,
+    "escalation_reason": null,
+    "ideal_key_points": [
+      "polite acknowledgment"
+    ]
+  },
+  {
+    "id": "oth_10",
+    "customer_text": "I love music so much",
+    "ground_truth_intent": "other_unclear",
+    "should_escalate": false,
+    "escalation_reason": null,
+    "ideal_key_points": [
+      "friendly remark"
+    ]
+  },
+  {
+    "id": "oth_11",
+    "customer_text": "Who is running this account right now? An AI or human?",
+    "ground_truth_intent": "other_unclear",
+    "should_escalate": false,
+    "escalation_reason": null,
+    "ideal_key_points": [
+      "clarify Spotify support team"
+    ]
+  },
+  {
+    "id": "oth_12",
+    "customer_text": "Can you recommend a good sad indie song for a rainy night?",
+    "ground_truth_intent": "other_unclear",
+    "should_escalate": false,
+    "escalation_reason": null,
+    "ideal_key_points": [
+      "recommend search or playlist like Life Sucks or Rainy Day"
+    ]
+  },
+  {
+    "id": "oth_13",
+    "customer_text": "Spotify vs Apple Music who wins?",
+    "ground_truth_intent": "other_unclear",
+    "should_escalate": false,
+    "escalation_reason": null,
+    "ideal_key_points": [
+      "playful brand loyalty"
+    ]
+  },
+  {
+    "id": "oth_14",
+    "customer_text": "asdfghjkl",
+    "ground_truth_intent": "other_unclear",
+    "should_escalate": false,
+    "escalation_reason": null,
+    "ideal_key_points": [
+      "ask if keyboard slipped / how can we help"
+    ]
+  },
+  {
+    "id": "oth_15",
+    "customer_text": "How do I apply for a software engineering internship at Spotify?",
+    "ground_truth_intent": "other_unclear",
+    "should_escalate": false,
+    "escalation_reason": null,
+    "ideal_key_points": [
+      "direct to lifeatspotify.com/jobs"
+    ]
+  },
+  {
+    "id": "oth_16",
+    "customer_text": "Can Spotify sponsor my university dance marathon next month?",
+    "ground_truth_intent": "other_unclear",
+    "should_escalate": false,
+    "escalation_reason": null,
+    "ideal_key_points": [
+      "direct to corporate sponsorship portal"
+    ]
+  },
+  {
+    "id": "oth_17",
+    "customer_text": "What was the very first song ever played on Spotify?",
+    "ground_truth_intent": "other_unclear",
+    "should_escalate": false,
+    "escalation_reason": null,
+    "ideal_key_points": [
+      "trivia: The Rasmus - Livin' in a World Without You / Coldplay"
+    ]
+  },
+  {
+    "id": "oth_18",
+    "customer_text": "Ratio + you fell off",
+    "ground_truth_intent": "other_unclear",
+    "should_escalate": false,
+    "escalation_reason": null,
+    "ideal_key_points": [
+      "ignore or playful reply"
+    ]
+  },
+  {
+    "id": "oth_19",
+    "customer_text": "My cat stepped on my keyboard sorry",
+    "ground_truth_intent": "other_unclear",
+    "should_escalate": false,
+    "escalation_reason": null,
+    "ideal_key_points": [
+      "say hi to cat"
+    ]
+  },
+  {
+    "id": "oth_20",
+    "customer_text": "dm",
+    "ground_truth_intent": "other_unclear",
+    "should_escalate": false,
+    "escalation_reason": null,
+    "ideal_key_points": [
+      "ask what issue they need help with"
+    ]
+  },
+  {
+    "id": "oth_21",
+    "customer_text": "Can I buy Spotify stock shares directly through Twitter?",
+    "ground_truth_intent": "other_unclear",
+    "should_escalate": false,
+    "escalation_reason": null,
+    "ideal_key_points": [
+      "refer to investor relations / licensed broker"
+    ]
+  },
+  {
+    "id": "oth_22",
+    "customer_text": "Happy new year Spotify team!",
+    "ground_truth_intent": "other_unclear",
+    "should_escalate": false,
+    "escalation_reason": null,
+    "ideal_key_points": [
+      "happy new year wishes"
+    ]
+  },
+  {
+    "id": "oth_23",
+    "customer_text": "Is green the only brand color you guys will ever use?",
+    "ground_truth_intent": "other_unclear",
+    "should_escalate": false,
+    "escalation_reason": null,
+    "ideal_key_points": [
+      "Spotify green is iconic"
+    ]
+  },
+  {
+    "id": "oth_24",
+    "customer_text": "I bet nobody reads these tweets",
+    "ground_truth_intent": "other_unclear",
+    "should_escalate": false,
+    "escalation_reason": null,
+    "ideal_key_points": [
+      "we're right here listening!"
+    ]
+  },
+  {
+    "id": "oth_25",
+    "customer_text": "Can you give me free Spotify Premium for my birthday please?",
+    "ground_truth_intent": "other_unclear",
+    "should_escalate": false,
+    "escalation_reason": null,
+    "ideal_key_points": [
+      "wish happy birthday, explain free tier or trials available"
+    ]
+  }
+]
