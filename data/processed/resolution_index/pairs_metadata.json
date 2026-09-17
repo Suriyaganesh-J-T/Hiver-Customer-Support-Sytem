@@ -1,1 +1,182 @@
-
+[
+  {
+    "thread_id": "thread_spot_1000",
+    "intent": "account_access",
+    "customer_query": "@user I can't log into my account, it keeps saying password incorrect even though I just reset it! Help!",
+    "agent_resolution": "Hey! Sorry to hear that. Could you try a private/incognito browser window to reset your password? If that doesn't work, DM us your account email and we'll check it on our end."
+  },
+  {
+    "thread_id": "thread_spot_1001",
+    "intent": "account_access",
+    "customer_query": "@user Somebody changed my email address on my Spotify account and I'm locked out! Was I hacked??",
+    "agent_resolution": "Hey there! We take account security very seriously. Please send us a direct message with any receipts or your username so our security team can secure and restore your account."
+  },
+  {
+    "thread_id": "thread_spot_1002",
+    "intent": "account_access",
+    "customer_query": "@user It's asking for a 2-factor code on login but I never get the SMS code on my phone.",
+    "agent_resolution": "Hi! Make sure your carrier isn't filtering shortcode texts. You can also try requesting the code via backup email or DM us with your username to verify your account."
+  },
+  {
+    "thread_id": "thread_spot_1003",
+    "intent": "account_access",
+    "customer_query": "@user Trying to invite my partner to my Family Plan but it says we don't live at the same address when we do!",
+    "agent_resolution": "Hey! Both accounts must have identical address formatting, including apartment/unit numbers. Try copy-pasting the exact address from the plan manager's account page."
+  },
+  {
+    "thread_id": "thread_spot_1004",
+    "intent": "account_access",
+    "customer_query": "@user My student discount verification failed through SheerID even though I am an active student.",
+    "agent_resolution": "Hi! SheerID requires an official current enrollment document dated within the last 3 months. Check out [LINK] or contact SheerID support to re-upload your document."
+  },
+  {
+    "thread_id": "thread_spot_1005",
+    "intent": "billing_subscription",
+    "customer_query": "@user Why was I charged twice this month for Spotify Premium? $10.99 showed up twice on my card!",
+    "agent_resolution": "Hey! That usually happens if there's a duplicate account created under a different email or Facebook login. DM us the last 4 digits of your card and billing zip code so we can trace the second charge."
+  },
+  {
+    "thread_id": "thread_spot_1006",
+    "intent": "billing_subscription",
+    "customer_query": "@user I canceled my Premium subscription two weeks ago and you guys still charged me today! Refund please!",
+    "agent_resolution": "Hey there, sorry for the confusion! Let's get that looked at right away. Send us a quick DM with your account email and we will review the cancellation timestamp and process your refund."
+  },
+  {
+    "thread_id": "thread_spot_1007",
+    "intent": "billing_subscription",
+    "customer_query": "@user I bought a 12-month Spotify gift card at Target and when I enter the code it says already redeemed!",
+    "agent_resolution": "Hi! Please make sure your account country matches the country where the gift card was purchased. If it does, DM us a photo of the card receipt and PIN code."
+  },
+  {
+    "thread_id": "thread_spot_1008",
+    "intent": "billing_subscription",
+    "customer_query": "@user How do I change my payment method from PayPal to Apple Pay on Spotify?",
+    "agent_resolution": "Hey! You can update your payment method directly at spotify.com/account under 'Manage Plan'. If your subscription is billed through Apple, you'll need to update it in your Apple ID settings."
+  },
+  {
+    "thread_id": "thread_spot_1009",
+    "intent": "billing_subscription",
+    "customer_query": "@user Charged for Duo plan even though my partner canceled their invite.",
+    "agent_resolution": "Hey there! The Duo plan charges the manager regardless of whether the second member accepts. You can downgrade to Individual at spotify.com/account anytime."
+  },
+  {
+    "thread_id": "thread_spot_1010",
+    "intent": "playback_bug",
+    "customer_query": "@user All my downloaded offline songs keep pausing after 10 seconds on my iPhone with iOS 17!",
+    "agent_resolution": "Hey! Try doing a clean reinstall: uninstall Spotify, restart your phone, and reinstall from the App Store. Also make sure 'Background App Refresh' is turned on in iOS Settings."
+  },
+  {
+    "thread_id": "thread_spot_1011",
+    "intent": "playback_bug",
+    "customer_query": "@user The desktop app crashes instantly every time I try to open it on Windows 11. Was working fine yesterday.",
+    "agent_resolution": "Hi! Let's fix that. Try clearing your Spotify cache located at %localappdata%\\Spotify\\Storage and delete the prefs file. Then launch the app again as administrator."
+  },
+  {
+    "thread_id": "thread_spot_1012",
+    "intent": "playback_bug",
+    "customer_query": "@user Songs stutter and skip constantly when connected to my car Bluetooth, but other audio apps work fine.",
+    "agent_resolution": "Hey! Try toggling off 'Hardware Acceleration' in Spotify Settings and disable 'Audio Normalization'. Unpairing and re-pairing the Bluetooth device also frequently clears this up."
+  },
+  {
+    "thread_id": "thread_spot_1013",
+    "intent": "playback_bug",
+    "customer_query": "@user Spotify Connect won't find my Sonos or Alexa speakers anymore on my home WiFi.",
+    "agent_resolution": "Hi! Make sure both your phone and smart speakers are on the same Wi-Fi frequency band (2.4GHz vs 5GHz) and restart your router. Let us know if that helps!"
+  },
+  {
+    "thread_id": "thread_spot_1014",
+    "intent": "playback_bug",
+    "customer_query": "@user Local files won't sync from my PC to my Android phone no matter what I do.",
+    "agent_resolution": "Hey! Ensure both devices are connected to the exact same Wi-Fi network and that Spotify is allowed through your Windows Firewall. Then toggle 'Show Local Files' off and on."
+  },
+  {
+    "thread_id": "thread_spot_1015",
+    "intent": "content_availability",
+    "customer_query": "@user Why is the new Drake album completely greyed out on my playlist in the UK?",
+    "agent_resolution": "Hey! Greyed-out tracks usually mean the rights holder or record label hasn't made streaming available in your region yet, or licensing agreements are being renewed."
+  },
+  {
+    "thread_id": "thread_spot_1016",
+    "intent": "content_availability",
+    "customer_query": "@user The explicit version of this song plays the clean radio edit even though my Explicit Content filter is set to ALLOW.",
+    "agent_resolution": "Hi! Try searching for the album directly and look for the '1 More Release' or explicit badge at the bottom right of the tracklist. Clear app cache if it persists."
+  },
+  {
+    "thread_id": "thread_spot_1017",
+    "intent": "content_availability",
+    "customer_query": "@user All my custom playlists from the last 5 years just completely vanished from my library today!!",
+    "agent_resolution": "Don't panic! You can recover deleted playlists at spotify.com/account/recover-playlists. Log in and click 'Restore' next to any playlist you want back."
+  },
+  {
+    "thread_id": "thread_spot_1018",
+    "intent": "content_availability",
+    "customer_query": "@user Podcasts aren't showing the latest episodes even though the RSS feed updated 4 hours ago.",
+    "agent_resolution": "Hey! Podcast episode propagation can take up to 24 hours across global CDNs. If it's still missing after 24 hours, DM us the podcast link and episode title."
+  },
+  {
+    "thread_id": "thread_spot_1019",
+    "intent": "feature_hardware",
+    "customer_query": "@user Is Spotify Car Thing officially discontinued? Mine won't connect anymore.",
+    "agent_resolution": "Hi there! Yes, Car Thing has been discontinued. Please visit [LINK] for official device support and refund/credit options for affected hardware owners."
+  },
+  {
+    "thread_id": "thread_spot_1020",
+    "intent": "feature_hardware",
+    "customer_query": "@user When is Spotify HiFi / Lossless audio finally coming? We've been waiting for 3 years!",
+    "agent_resolution": "Hey! We know folks are excited about lossless audio! We don't have a release date to share just yet, but keep an eye on our official newsroom for announcements."
+  },
+  {
+    "thread_id": "thread_spot_1021",
+    "intent": "feature_hardware",
+    "customer_query": "@user Why did you remove the lyrics button on the free mobile tier? I can't read lyrics anymore.",
+    "agent_resolution": "Hi! Lyrics availability varies across tiers, markets, and devices as we continually test and iterate on our features. We appreciate the feedback and will pass it to the product team."
+  },
+  {
+    "thread_id": "thread_spot_1022",
+    "intent": "feature_hardware",
+    "customer_query": "@user How do I set Spotify as the default music provider on my Google Nest speaker?",
+    "agent_resolution": "Hey! Open the Google Home app > Settings > Music, select Spotify, and link your account credentials. You can then say 'Hey Google, play my music'."
+  },
+  {
+    "thread_id": "thread_spot_1023",
+    "intent": "general_complaint",
+    "customer_query": "@user The new UI update is absolutely hideous and unusable. Who designed this mess?? Roll it back!",
+    "agent_resolution": "Hey there. We're always experimenting with updates to make discovering audio easier, but we understand change takes getting used to. We've logged your feedback for our design team."
+  },
+  {
+    "thread_id": "thread_spot_1024",
+    "intent": "general_complaint",
+    "customer_query": "@user Another price increase? You guys are getting way too greedy. Might switch to Apple Music.",
+    "agent_resolution": "Hi. To continue investing in and innovating on our product offerings and features, we occasionally update our pricing. We appreciate your loyalty and hope you stay with us."
+  },
+  {
+    "thread_id": "thread_spot_1025",
+    "intent": "general_complaint",
+    "customer_query": "@user Customer support on Twitter takes hours to respond! Terrible customer experience.",
+    "agent_resolution": "We're so sorry for the delay! We're experiencing higher volume than usual today. How can we help you right now?"
+  },
+  {
+    "thread_id": "thread_spot_1026",
+    "intent": "general_complaint",
+    "customer_query": "@user Shuffle algorithm is broken. It plays the same 10 songs out of my 800 song playlist every single day.",
+    "agent_resolution": "Hey! Try turning off 'Automix' in Playback Settings and clear your app cache. Spotify shuffle uses a complex distribution algorithm, but clearing cache resets the session seed."
+  },
+  {
+    "thread_id": "thread_spot_1027",
+    "intent": "other_unclear",
+    "customer_query": "@user hey what's up",
+    "agent_resolution": "Hey there! How can we help with your Spotify account today?"
+  },
+  {
+    "thread_id": "thread_spot_1028",
+    "intent": "other_unclear",
+    "customer_query": "@user Can you tell Taylor Swift that I love her so much??",
+    "agent_resolution": "We love Taylor too! We can't pass personal messages, but you can stream all her eras on Spotify!"
+  },
+  {
+    "thread_id": "thread_spot_1029",
+    "intent": "other_unclear",
+    "customer_query": "@user ?",
+    "agent_resolution": "Hey! Did you have a question or need assistance with your music streaming? Let us know!"
+  }
+]
